@@ -1,0 +1,892 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+*
+{
+    margin:0;
+    padding:0;
+}
+/*HEADER start*/
+
+.head
+{
+    background-color: #2874f0;
+    display: flex;
+    height: 55px;
+    width: 100%;
+    position: fixed;
+ }
+.p1
+{
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 53px;
+  width: 194px;
+} 
+nav ul
+{
+    display: flex;
+    justify-content: flex-start;
+}
+nav ul li
+{
+    list-style: none;
+    padding: 0px 23px;
+    line-height: 55px;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+}
+nav ul :hover
+{
+    opacity: 0.6;
+    background-color: skyblue;
+    border-radius: 6px;
+}
+.search
+{
+    display: flex;
+    margin: 4px 15px;
+} 
+.search input
+{
+    height: 40px;
+    padding-left: 7px;
+    border: 2px solid black;
+    border-radius: 11px;
+}
+#search1
+{
+    padding: 6px 15px;
+    background: lightgoldenrodyellow;
+    font-weight: bold;
+    height: 44px;
+ }
+ #search1:hover{
+     opacity: 0.7;
+     cursor: pointer;
+ }
+ .butns .childbtns
+ {
+    display: flex;
+    justify-content: space-between;
+ }
+ /*Log out and admin button styling start*/
+ #profile, #logout, #admin
+ {
+    margin: 0px 4px;
+ }
+ #profile
+ {
+    border: 3px solid black;
+    border-radius: 5px;
+    color: #181819;
+    text-decoration: none;
+    padding: 8px;
+    background: rgb(21, 189, 180);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 20px;
+ }
+ #logout{
+   
+    border: 3px solid black;
+    border-radius: 5px;
+    color: #181819;
+    text-decoration: none;
+    padding: 8px;
+    background: red;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 20px;
+}
+#admin
+{
+    border: 3px solid black;
+    border-radius: 5px;
+    color: #181819;
+    text-decoration: none;
+    padding: 8px;
+    background: green;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 20px;
+}
+#cart
+{
+    border: 3px solid black;
+    border-radius: 5px;
+    color: #181819;
+    text-decoration: none;
+    padding: 8px;
+    background: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 20px;
+
+}
+#profile:hover{
+    opacity:0.7;
+}
+#admin:hover{
+    opacity:0.7;
+}
+#logout:hover{
+    opacity:0.7;
+}
+#cart:hover{
+    opacity:0.7;
+}
+ /*Log out and admin button styling ends*/
+.butns .title
+{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'FontAwesome';
+    color: white;
+    padding: 13px 0px;
+    width: 248px;
+    text-align: center;
+}
+.butns .fa
+{
+    font-size: 40px;
+    color: yellow;
+    margin-left: 23px; 
+}
+
+/*logout styling end*/
+#btn
+{
+    border-radius: 15px;
+    margin: 0px 7px;
+    padding: 0px 11px;
+    border: 1px black;
+    border-style: solid;
+    font-weight: bold;
+}
+ #btn:hover
+{
+       background-color: black;
+       color:white;
+       cursor:pointer;
+}
+.butns
+{
+    display: flex;
+    margin: 9px;
+    justify-content: space-around;
+}
+.butns button
+{
+    padding: 8px 15px;
+    font-size: 13px;
+    font-weight: 900;
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+    margin: 0px 13px;
+}
+.butns button:hover
+{
+       cursor: pointer;
+       opacity: 0.6;
+}
+
+
+/*header end*/
+/*main conatiner*/
+.mainclass
+{
+    height: auto;
+    display: inline-block;
+    margin-top: 58px;
+    width: 100%;
+}
+/*main conatiner end*/
+/*main index style starts*/
+
+.indexcontainer
+{
+    display: inline-block;
+    width:100%;
+    
+}
+.slider{
+    display: flex;
+    justify-content: center;
+}
+.slider img
+{
+    width: 80%;
+    margin: 5px auto;
+}
+.mainitems
+{
+    display: flex;
+    flex-direction: column;
+}
+.mainitems .heading
+{
+    background-color: yellow;
+    text-align: center;
+    margin: 7px;
+    border: 3px black solid;
+    padding: 8px;
+    border-radius: 8px;
+}
+.itemslist
+{
+    display: flex;
+    flex-direction: row;
+    background-color: tomato;
+    margin: 7px;
+    border: 3px black solid;
+    padding: 8px;
+    border-radius: 8px;
+    min-height: 100vh;
+}
+.itemslist .itemscommon
+{
+    margin: 6px 10px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.itemslist .itemscommon .items
+{
+    height: 225px;
+    width: 23%;
+    border: 1px black solid;
+    margin: 2px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background: antiquewhite;
+    
+}
+.itemslist .itemscommon .items img{
+    
+    border: 2px darkslateblue solid;
+    border-radius: 50%;
+    margin:10px auto;
+    width:  200px;
+    height: 150px;
+    background-size: cover;
+}
+.itemslist .itemscommon .items a{
+    margin: 6px auto;
+    text-decoration: none;
+    background: black;
+    color: white;
+    width: 290px;
+    height: 30px;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*main index style ends*/
+/*Footer Styling Starts*/
+footer
+{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+footer .footeritem1
+{
+    margin: 6px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .footeritem2
+{
+    margin:8px;
+    padding:8px;
+    text-align: center;
+}
+footer .footeritem1 .Address .material-icons
+{
+     color:red;
+     font-size: 30px;
+}
+footer .footeritem1 .Address .material-icons:hover
+{
+   color:whitesmoke;
+   cursor: pointer;
+}
+footer .fa
+{
+    padding: 11px;
+    margin: 6px;
+    background-color: rgba(161, 153, 153, 0.925);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    width:20px;
+}
+footer .fa-facebook:hover
+{
+    background: #3B5998;
+    color: white;
+}
+footer .fa-twitter:hover
+{
+    background: #55ACEE;
+    color: white;
+}
+footer .fa-google:hover
+{
+    background: #dd4b39;
+    color: white;
+}
+footer .fa-youtube:hover
+{
+    background: #bb0000;
+    color: white;
+}
+footer .fa-instagram:hover
+{
+    background: #cb2027;
+    color: white;
+}
+footer .footeritem1 .links
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+footer .footeritem1 .links a{
+    text-decoration: none;
+    color:white;
+}
+footer  .footeritem1  .Address h3, footer .footeritem1 .logo h3
+{
+    padding: 10px 0px;
+}
+/*Footer Style End*/
+/* About Page Style Start */
+.aboutcontainer
+{
+    display: inline-block;
+    margin: 19px; 
+}
+.aboutcontainer .heading h2
+{
+    border: 2px black solid;
+    background-color: #2874f0;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    margin: 10px auto;
+    width: 15vw;
+    border-radius: 12px;
+    padding: 11px;
+}
+.aboutcontainer .aboutitems
+{
+    display: flex;
+    flex-direction:row;
+}
+.aboutcontainer .aboutitems .aboutitem1
+{
+    width: 70%;
+    margin: 15px 15px;
+    height: 587px;
+    width: 70%;
+    text-align: justify;
+    font-size: 18px;
+    background-color: yellow;
+    padding: 17px;
+}
+.aboutcontainer .aboutitems .aboutitem2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 248px;
+    width: 24%;
+    margin: 15px 15px;
+    padding: 17px;
+    font-size: 18px;
+    background-color: #55ACEE;
+}
+.aboutcontainer .aboutitems .aboutitem2 p
+{
+    font-size: 23px;
+    margin: 12px auto;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    padding: 8px;
+    background-color: yellow;
+    border-radius: 23px;
+}
+/*About PAge Styling ENd*/
+/*Contact Page Styling Start*/
+.ContactContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 19px;
+}
+.ContactContainer .contactheading
+{
+    background-color: rgb(252, 255, 71);
+    display: inline-block;
+    text-align: center;
+    width: 52%;
+    margin-left: 314px;
+}
+.ContactContainer  .contactform
+{
+    background-color: aquamarine;
+    width: 50vw;
+    margin: 10px auto;
+    display: inline-block;
+}
+.ContactContainer  .contactform form
+{
+    margin: 15px 200px;
+}
+.ContactContainer  .contactform form .commondiv
+{
+    margin: 4px;
+    padding: 10px;
+}
+.ContactContainer  .contactform form .commondiv input,
+.ContactContainer  .contactform form .commondiv textarea
+{
+    width: 100%;
+    height: 40px;
+    padding-left: 4px;
+    border-radius: 8px;
+}
+.ContactContainer  .contactform form #send
+{
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    background-color: blue;
+    color: cornsilk;
+    font-weight: bold;
+    margin-left: 31px;
+    padding: 8px;
+    border: 2px black solid;
+    border-radius: 19px;
+}
+/*Contact Page Styling end*/ 
+/*Login Page Styling Starts*/
+.logincontainer
+{
+    display: inline-block; 
+    width:100%;
+}
+.logincontainer .loginheading
+{
+    display: inline-block;
+    width: 40vw;
+    margin: 10px 401px;
+    background: yellow;
+}
+.logincontainer .loginheading h2
+{
+    border: 2px black solid;
+    background-color: #2874f0;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    margin: 10px auto;
+    width: 38%;
+    border-radius: 39px;
+    padding: 8px;
+    text-align: center;
+}
+.logincontainer .loginheading p{
+    font-size: 24px;
+    text-align: center;
+}
+.logincontainer .loginform
+{
+    background-color:aquamarine;
+    width: 22%;
+    padding: 12px auto;
+    padding: 15px 126px;
+    margin: 25px;
+    border: 2px black solid;
+    border-radius: 27px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 402px;
+}
+.logincontainer .loginform input
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 14px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+.logincontainer .loginform #login
+{
+    background-color: #2874f0;
+    color: white;
+    cursor: pointer;
+}
+.logincontainer .loginform #login:hover{
+    opacity: 0.8;
+}
+.logincontainer .loginfooter
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 10px auto;
+}
+.logincontainer .loginfooter .psw
+{
+    margin: 10px;
+    padding: 13px;
+}
+.logincontainer .loginfooter #cancelbtn
+{
+    margin: 10px;
+    padding: 12px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    border-radius: 9px;
+}
+/*Login Page Styling Ends*/
+/*SignUP Page Styling Starts*/
+.signupcontainer
+{
+    display:inline-block;
+    
+}
+.signupcontainer .signupheading
+{
+    width: 70vw;
+    margin: 4px 196px;
+    background: yellow;
+    text-align: center;
+    display: inline-block;
+}
+.signupcontainer .signupheading h2
+{
+    border: 2px black solid;
+    background-color: #2874f0;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    margin: 11px auto;
+    width: 33%;
+    border-radius: 39px;
+    padding: 9px;
+}
+.signupcontainer .signupform
+{
+    display: inline-block;
+    width: 70vw;
+    margin: 11px 196px;
+    background-color: aquamarine;
+    border-radius: 17px;
+    border: 2px solid black;
+}
+.signupcontainer .signupform  form .element
+{  
+    display: flex;
+    justify-content: center;
+    margin: 7px;
+    padding: 8px
+}
+.signupcontainer .signupform  form .element input
+{
+    width: 100%;
+    height: 40px;
+    margin: 0px 10px;
+}
+.signupcontainer .signupform  form .element textarea{
+    width: 97%;
+    height: 46px;
+}
+.signupcontainer .signupform  form .element textarea,
+.signupcontainer .signupform  form .element input
+{
+    border-radius: 7px;
+    padding-left: 10px;
+}
+.signupcontainer .signupform  form .btns
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 13px;
+}
+.signupcontainer .signupform  form .btns input
+{
+    padding: 12px;
+    border-radius: 8px;
+    font-size: medium;
+    border: 1px black solid;
+    font-weight: bold;
+    color: whitesmoke;
+}
+#s1
+{
+    background-color:#2874f0;
+}
+#r1
+{
+    background-color: tomato;
+}
+.btns input:hover{
+    opacity: 0.8;
+}
+/*Sign up styling Ends*/
+/*Category Items Styling Starts*/
+.categorycontainer
+{
+    display:inline-block;
+}
+.categorycontainer .categoryHeading
+{
+    background-color: aqua;
+    width: 26vw;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 23px;
+    text-align: center;
+    border: 2px black solid;
+}
+.categorycontainer .categoryContent
+{
+    background-color: blueviolet;
+    width: 90vw;
+    margin: 9px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.categorycontainer .categoryContent .categoryCommon
+{
+    background-color: skyblue;
+    margin: 10px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 3px black solid;
+    border-radius: 12px;
+}
+.categorycontainer .categoryContent .categoryCommon .item
+{
+    width: 24%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.categorycontainer .categoryContent .categoryCommon .item img
+{
+    width: 141px;
+    height: 105px;
+    margin: 0px 73px;
+    border: 2px black solid;
+    border-radius: 16px;
+}
+.categorycontainer .categoryContent .categoryCommon .item p
+{
+    background-color: yellow;
+    margin: 4px 100px;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 13px;
+}
+.incdec
+{
+    display: flex;
+    justify-content: center;
+}
+.incdec button{
+    padding: 3px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 42%;
+}
+.incdec input::-webkit-outer-spin-button,
+.incdec input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.incdec input{
+    width: 10%;
+    padding: 2px 9px;
+}
+.item .cart{
+    margin: 3px 43px;
+    padding: 10px;
+    border-radius: 27px;
+    background-color: skyblue;
+    color: #151517;
+    font-weight: bolder;
+}
+.item .cart:hover{
+    opacity: 0.7;
+}
+/*Category Items Styling Ends*/
+/*Category Form and Item Form Styling Starts*/
+.contact
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.categoryForm .categoryDiv,.itemForm .itemDiv
+{
+    display: flex;
+    justify-content: center;
+    
+    margin: 4px;
+    height: 300px;
+    border: 2px red solid;
+    background-color: rgba(14, 122, 223, 0.931);
+}
+.itemForm .itemDiv #category
+{
+    width: 102%;
+    height: 31px;
+    border-radius: 7px;
+    border: 2px black solid;
+}
+.categoryForm .categoryDiv table
+{
+    border-spacing: 13px 19px
+}
+.itemForm .itemDiv table
+{
+    border-spacing: 22px 9px;
+}
+.categoryForm .categoryDiv table caption,.itemForm .itemDiv table caption
+{
+    text-align: center;
+    font-size: 20px;
+    background-color: greenyellow;
+    color: #2b2150;
+    font-weight: bold;
+    width: 47%;
+    margin: 3px auto;
+    padding: 5px;
+    border-radius: 16px;
+}
+.categoryForm .categoryDiv table input{
+    width: 100%;
+    height: 25px;
+    padding-left: 4px;
+    border-radius: 7px
+
+}
+.itemForm .itemDiv table input{
+    width: 100%;
+    height:25px;
+    padding-left: 4px;
+    border-radius: 7px
+}
+#additm
+{
+    margin-left: 338px;
+}
+#addcat
+{
+    margin-left: 295px;
+}
+#additm ,#addcat
+{
+   
+    padding: 7px;
+    background-color: slateblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+/*Category Form and Item Form Styling Ends*/
+/*User msgs designing starts*/
+.usermsg
+{
+    margin-bottom: 40px;
+}
+.usermsg .contain h2
+{
+    text-align: center;
+    margin: 21px auto;
+    background: yellow;
+    width: 16%;
+    padding: 10px;
+    border-radius: 21px;
+    border: 2px red solid;
+}
+.usermsg .contain .users{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0px auto;
+}
+.users th
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #26cdd3;
+    color: white;
+}
+.users td,.users th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.users tr:nth-child(even)
+{
+    background-color: #ccc;
+}
+#update
+{
+    text-decoration: none;
+    border: 2px black solid;
+    padding: 9px;
+    background: rgb(22 236 22);
+    color:black;
+    font-weight: bold;
+    border-radius: 20px;
+}
+#delete
+{
+    text-decoration: none;
+    border: 2px black solid;
+    padding: 0px 14px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 27px;
+}
+/*User msgs designing ends*/
+
